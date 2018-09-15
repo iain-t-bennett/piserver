@@ -24,7 +24,7 @@ General updates (default login is pi@192.168.1.xxx, password: raspberry)
   * `sudo service mongodb stop`
 	* `sudo service mongodb disable`
 * Add Ubiquiti's source list 
-   * `echo "deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti" | sudo tee /etc/apt/sources.list.d/100-ubnt.list`
+   * `echo 'deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti' | sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list`
    * `sudo wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ubnt.com/unifi/unifi-repo.gpg`
    * `sudo apt-get update`
    * `apt-get install -y unifi`
