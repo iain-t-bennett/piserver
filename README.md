@@ -18,7 +18,8 @@ General updates (default login is pi@192.168.1.xxx, password: raspberry)
 * `sudo reboot`
 
 ## Install [unifi](https://www.ubnt.com/download/unifi/) controller 
-* Install Java 7 (OpenJDK) and MongoDB `sudo apt-get install -y openjdk-7-jre-headless mongodb`
+* Install MongoDB `sudo apt-get install -y mongodb`
+* Install Java 8 `sudo apt-get install oracle-java8-jdk`
 * Disable the default MongoDB instance to free up resources (UniFi will run its own copy)
   * `sudo service mongodb stop`
 	* `sudo service mongodb disable`
