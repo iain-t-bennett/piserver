@@ -30,6 +30,9 @@ General updates (default login is pi@192.168.1.xxx, password: raspberry)
    * `apt-get install -y unifi`
 * login to https://192.168.1.xxx:8443
 * set a fixed IP address for pi
+   * `sudo nano /etc/dhcpcd.conf`
+   * add lines `interface eth0 static ip_address=192.168.1.XX/24 static routers=192.168.1.1 static domain_name_servers=192.168.1.1`
+   * `sudo reboot`
 
 ## Install [pihole](https://pi-hole.net/)
 * `curl -sSL https://install.pi-hole.net | bash`
